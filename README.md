@@ -12,19 +12,21 @@ The buses send notifications of their states to a Kafka topic. The information i
 - docker/docker-compose 
 - Python 3.9+ (note: application has been run with 3.14)
 
-
-> [!NOTE]
-> In case the installation of **quixstreams** gives a gcc error, either install missing gcc/g++/make libraries or librdkafka, if the system is not among the ones supported by the library developers (Windows, MacOS, Ubuntu etc., more information on their website)
-
 ## How to run:
-Use the following commands in the folder where the docker-compose.yml file is accessible.
 
-### Step 0 - Build the cluster
+### Step 0 - Setup
+```console
+pip install -r requirements.txt
+```
 
 ```console
 docker compose build
 ```
 Only necessary once.
+
+> [!NOTE]
+> In case the installation of **quixstreams** gives a gcc error, either install missing gcc/g++/make libraries or librdkafka, if the system is not among the ones supported by the library developers (Windows, MacOS, Ubuntu etc., more information on their website)
+
 
 ### Step 1 - Start the Kafka cluster
 
