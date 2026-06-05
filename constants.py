@@ -1,0 +1,5 @@
+TOPIC_NAME    = "cluj-buses"
+BROKER_ADDRESS = "localhost:9092"
+TICK_INTERVAL  = 3.0
+PUBLISH_EVERY  = 1
+
