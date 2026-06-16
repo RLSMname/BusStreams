@@ -19,11 +19,6 @@ The buses send notifications of their states to a Kafka topic. The information i
 pip install -r requirements.txt
 ```
 
-```console
-docker compose build
-```
-Only necessary once.
-
 > [!NOTE]
 > In case the installation of **quixstreams** gives a gcc error, either install missing gcc/g++/make libraries or librdkafka, if the system is not among the ones supported by the library developers (Windows, MacOS, Ubuntu etc., more information on their website)
 
